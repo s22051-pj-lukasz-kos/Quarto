@@ -1,6 +1,7 @@
 import random
 from Pawn import Pawn
 
+
 class Pieces:
     def __init__(self):
         self.pawns = []
