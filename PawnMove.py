@@ -7,4 +7,5 @@ class PawnMove:
         self.pawn = pawn
 
     def __str__(self):
-        return f"({self.position}, {self.pawn})"
+        position_str = f"({self.position[0] + 1}, {self.position[1] + 1})"
+        return f"({position_str}, {self.pawn})"

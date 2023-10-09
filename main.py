@@ -144,7 +144,7 @@ class Quarto( TwoPlayerGame ):
     def scoring(self): return -100 if self.lose() else 0
 
     def show(self): 
-        print ("Show available pawns")
+        print ("Pawns in the pool:")
         for pawn in self.pawnsPile:
             print(pawn, end=" ")
         print()
@@ -152,13 +152,12 @@ class Quarto( TwoPlayerGame ):
         for row in self.board: 
             for pawn in row: 
                 if pawn is None: 
-                    print(".", end="")
+                    print(" .", end="")
                 else:
                     print(pawn, end="")
             print()
         print("Type 'show moves to see all moves")
-        print("To move pawn type e.g. 'move #11'")
-
+        print("To move a pawn type e.g. 'move #11'")
 
 # if __name__ == "__main__":
 #     from easyAI import TranspositionTable, solve_with_iterative_deepening
