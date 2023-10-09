@@ -9,7 +9,7 @@ class Pieces:
 
     def populate_pawns(self):
         sizes = ["Small", "Large"]
-        colors = ["Dark", "Light"]
+        colors = ["Red", "Blue"]
         shapes = ["Square", "Circular"]
         hollows = ["Hollow", "Solid"]
 

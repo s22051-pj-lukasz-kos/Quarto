@@ -10,17 +10,17 @@ class Pawn:
         blue = "\u001b[34m"
         red = "\u001b[31m"
         reset_color = "\x1b[0m"
-        if self.color == 0:
+        if self.color == "Red":
             color_str = red
         else:
             color_str = blue
-        if self.shape == 0:
+        if self.shape == "Square":
             output += "x"
         else:
             output += "o"
-        if self.size == 1:
+        if self.size == "Small":
             output = output.capitalize()
-        if self.hollow == 1:
+        if self.hollow == "Hollow":
             output += "h"
         else:
             output += "s"
