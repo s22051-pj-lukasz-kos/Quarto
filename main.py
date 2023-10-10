@@ -177,4 +177,3 @@ if __name__ == "__main__":
     ai_algo = Negamax(4, scoring)
     game = Quarto([Human_Player(), AI_Player(ai_algo)])
     history = game.play()
-    print("Player %d wins" % game.current_player)
