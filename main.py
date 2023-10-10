@@ -139,7 +139,10 @@ class Quarto(TwoPlayerGame):
         )
 
     def is_over(self):
-        return (self.possible_moves() == []) or self.lose()
+        return self.lose() or self.is_draw()
+
+    def is_draw(self):
+        return self.possible_moves() == [] and not self.lose()
 
     def scoring(self):
         return -100 if self.lose() else 0
@@ -157,8 +160,14 @@ class Quarto(TwoPlayerGame):
                 else:
                     print(pawn, end="")
             print()
-        print("Type 'show moves' to see all moves")
-        print("To move a pawn type e.g. 'move #11'")
+        if self.is_draw():
+            print("The game is a draw!")
+        elif self.lose():
+            winning_player = self.current_player
+            print(f"Player {winning_player} wins!")
+        else:
+            print("Type 'show moves' to see all moves")
+            print("To move a pawn type e.g. 'move #11'")
 
 
 if __name__ == "__main__":
