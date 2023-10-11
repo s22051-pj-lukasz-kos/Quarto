@@ -1,11 +1,35 @@
 class Pawn:
+    """
+    Represents a Quarto game piece with attributes like size, color, shape, and hollow.
+
+    Attributes:
+    size (str): The size of the pawn, either "Small" or "Large."
+    color (str): The color of the pawn, either "Red" or "Blue."
+    shape (str): The shape of the pawn, either "Square" or "Circular."
+    hollow (str): The type of the pawn, either "Hollow" or "Solid."
+    """
     def __init__(self, size, color, shape, hollow):
-        self.size = size  # Small or Large
-        self.color = color  # Red or Blue
-        self.shape = shape  # Square or Circular
-        self.hollow = hollow  # Hollow or Solid
+        """
+                Initialize a Quarto game piece (pawn) with the specified attributes.
+
+                Parameters:
+                size (str): The size of the pawn, either "Small" or "Large."
+                color (str): The color of the pawn, either "Red" or "Blue."
+                shape (str): The shape of the pawn, either "Square" or "Circular."
+                hollow (str): The type of the pawn, either "Hollow" or "Solid."
+        """
+        self.size = size
+        self.color = color
+        self.shape = shape
+        self.hollow = hollow
 
     def __str__(self):
+        """
+               Returns a string representation of the pawn using colored ASCII characters.
+
+               Returns:
+               str: A string representing the pawn, color-coding for Red and Blue, and a character coding for other
+        """
         output = ""
         blue = "\u001b[34m"
         red = "\u001b[31m"
