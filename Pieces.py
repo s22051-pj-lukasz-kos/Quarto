@@ -4,10 +4,10 @@ from Pawn import Pawn
 
 class Pieces:
     """
-            Represents the pool of pieces, it is populating the pool with unique pieces and shuffling them
+    Represents the pool of pieces, it is populating the pool with unique pieces and shuffling them
 
-            Attributes:
-            pawns (list): A list of Quarto pieces in the pool.
+    Attributes:
+    pawns (list): A list of Quarto pieces in the pool.
     """
     def __init__(self):
         self.pawns = []
@@ -16,8 +16,8 @@ class Pieces:
 
     def populate_pawns(self):
         """
-             Populates the pool with unique Quarto pieces. Each piece is defined by its size, color,
-             shape, and hollow attributes.
+        Populates the pool with unique Quarto pieces. Each piece is defined by its size, color,
+        shape, and hollow attributes.
         """
         sizes = ["Small", "Large"]
         colors = ["Red", "Blue"]
@@ -32,13 +32,13 @@ class Pieces:
 
     def shuffle_pawns(self):
         """
-            Randomly shuffles the pieces in the pile
+        Randomly shuffles the pieces in the pile
         """
         random.shuffle(self.pawns)
         self.pawns = self.pawns[:16]
 
     def __str__(self):
         """
-            Returns a string representation of the pieces in the pool.
+        Returns a string representation of the pieces in the pool.
         """
         return "\n".join(map(str, self.pawns))
