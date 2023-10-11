@@ -9,7 +9,9 @@ class Quarto(TwoPlayerGame):
     """
     Quarto is a two-player board game where the goal is to form a line of four pieces
     with a common attribute. The game is played on a 4x4 board, and players take turns
-    placing pieces on the board.
+    placing pieces on the board. Each pawn has four distinct attributes (red/blue,
+    large/small, square/round, hollow/solid) to win you need to for a line of four pawn with one common attribute.
+    To make a move is to place one pawn, chosen from 16 pieces common for both players
 
     Rules and Gameplay:
     - Game is played in turns
@@ -27,6 +29,8 @@ class Quarto(TwoPlayerGame):
          pip install easyAI
 
     Authors: Łukasz Kos, Emilian Murawski
+
+    ENJOY:)
     """
 
     def __init__(self, players):
@@ -290,6 +294,10 @@ if __name__ == "__main__":
     from easyAI import AI_Player, Negamax
 
     scoring = lambda game: -100 if game.lose() else 0
+    """
+    The AI player makes its move with a search depth of 4 in the game tree. If you experience delays
+    in AI decision-making, consider reducing the depth parameter in the 'Negamax' function below.
+    """
     ai_algo = Negamax(4, scoring)
     game = Quarto([Human_Player(), AI_Player(ai_algo)])
     history = game.play()
