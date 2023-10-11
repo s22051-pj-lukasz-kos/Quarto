@@ -16,6 +16,8 @@ class Quarto(TwoPlayerGame):
      - Winning lines could be horizontal, vertical and diagonal
      - To show possible moves type: 'show moves'
      - To make move type: 'move #{move_number}' e.g. move #11
+     - WARNING! Game significantly differs from the original rules, in our variant you choose and place a piece
+       in one turn, in original rules you choose the piece to be placed by your opponent
 
     Setup:
     - To play Quarto, you need Python installed on your system
