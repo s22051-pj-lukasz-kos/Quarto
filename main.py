@@ -10,7 +10,7 @@ class Quarto(TwoPlayerGame):
     Quarto is a two-player board game where the goal is to form a line of four pieces
     with a common attribute. The game is played on a 4x4 board, and players take turns
     placing pieces on the board. Each pawn has four distinct attributes (red/blue,
-    large/small, square/round, hollow/solid) to win you need to for a line of four pawn with one common attribute.
+    large/small, square/round, hollow/solid) to win you need to form a line of four pawns with one common attribute.
     To make a move is to place one pawn, chosen from 16 pieces common for both players
 
     Rules and Gameplay:
