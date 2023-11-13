@@ -27,7 +27,7 @@ def predict_rate(user_id, item_id, n):
         if indices.flatten()[i]+1 == user_id:
             continue
         else:
-            neighborhood_ratings.append(user_movies.iloc[indices.flatten()[i],item_id-1])
+            neighborhood_ratings.append(user_movies.iloc[indices.flatten()[i], item_id-1])
     # delete weight for input user
     weights = np.delete(indices.flatten(), 0)
     prediction = round((neighborhood_ratings * weights).sum() / weights.sum())
@@ -45,4 +45,4 @@ users_similarity = 1 - pairwise_distances(user_movies.to_numpy(), metric="correl
 users_similarity_df = pd.DataFrame(users_similarity)
 
 find_neighborhood(1, 10)
-predict_rate(1, 11, 5)
+predict_rate(1, 11, 10)
