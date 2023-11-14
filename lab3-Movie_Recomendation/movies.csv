@@ -11,8 +11,8 @@ movie_id,title
 10,Avengers: Czas Ultrona
 11,Terminator 2
 12,Planeta Singli
-13,List do M.
-14,List do M. 2
+13,Listy do M.
+14,Listy do M. 2
 15,Forrest Gump
 16,Ex Machina
 17,Gran Torino
@@ -28,9 +28,9 @@ movie_id,title
 27,Ona
 28,Whiplash
 29,Diabeł ubiera się u Prady
-30,La Casa De Papel
+30,Dom z papieru
 31,Peaky Blinders
-32,Contra Tiempo 
+32,Contratiempo 
 33,La Cara Oculta
 34,Palacz zwłok
 35,Żołnierze kosmosu 3: Grabieżca
@@ -125,12 +125,11 @@ movie_id,title
 124,365 dni
 125,Nie czas umierać
 126,Prison break
-127,The Reacher
+127,Reacher
 128,Wściekłe Pięści Węża
 129,Labirynt
 130,Get out
 131,Coś
-132,Seven
 133,Switch
 134,Kobiety Mafii
 135,Ludzka stonoga
@@ -160,8 +159,8 @@ movie_id,title
 159,Sędzia Dredd
 160,Pewnego razu w Hollywood 
 161,Morbius
-162,Jurrasic World
-163,Jurrasic World 2
+162,Jurassic World
+163,Jurassic World 2
 164,Pulp Fiction
 165,Avengers: Infinity War 
 166,Kac Vegas

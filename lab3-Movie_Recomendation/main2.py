@@ -100,8 +100,8 @@ def anti_recommend_movies(user_id, user_similarity_matrix, user_item_rating_matr
 # Example usage:
 # Recommend movies for user_id 0
 print('Recommendations')
-print(recommend_movies(2, user_similarity_matrix, user_item_rating_matrix, n_top_users=5, n_recommendations=5))
+print(recommend_movies(0, user_similarity_matrix, user_item_rating_matrix, n_top_users=5, n_recommendations=5))
 
 # Anti-recommend movies for user_id 0
 print('Anti-recommendations')
-print(anti_recommend_movies(2, user_similarity_matrix, user_item_rating_matrix, n_least_similar_users=5, n_recommendations=5))
+print(anti_recommend_movies(0, user_similarity_matrix, user_item_rating_matrix, n_least_similar_users=5, n_recommendations=5))
