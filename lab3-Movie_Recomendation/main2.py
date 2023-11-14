@@ -72,15 +72,15 @@ def anti_recommend_movies(user_id, user_similarity_matrix, user_item_rating_matr
     # Get the least similar users
     least_similar_users = user_similarity_matrix[user_id].sort_values().head(n_least_similar_users)
 
-    # Get the ratings of these users and multiply by the similarity scores (considering only negative correlations)
+    # Get the ratings of these users and multiply by the negative similarity scores
     least_similar_users_ratings = user_item_rating_matrix.loc[least_similar_users.index]
-    least_similar_users_ratings = least_similar_users_ratings.multiply(least_similar_users.values, axis=0)
+    least_similar_users_ratings = least_similar_users_ratings.multiply(-1 * least_similar_users.values, axis=0)
 
-    # Get the sum of similarity scores (which are negative for these users) for weighted average calculation
-    sum_of_weights = least_similar_users_ratings.notnull().multiply(least_similar_users.values, axis=0).sum(axis=0)
+    # Get the sum of negative similarity scores for weighted average calculation
+    sum_of_weights = least_similar_users_ratings.notnull().multiply(-1 * least_similar_users.values, axis=0).sum(axis=0)
 
-    # Calculate the weighted average score - the negative sign is to account for negative weights
-    movie_scores = -1 * least_similar_users_ratings.sum(axis=0) / sum_of_weights
+    # Calculate the weighted average score
+    movie_scores = least_similar_users_ratings.sum(axis=0) / sum_of_weights
 
     # Remove movies already rated by the user and movies with no negative weights (to avoid division by zero)
     rated_movies = user_item_rating_matrix.loc[user_id, user_item_rating_matrix.loc[user_id, :] > 0].index
@@ -100,8 +100,8 @@ def anti_recommend_movies(user_id, user_similarity_matrix, user_item_rating_matr
 # Example usage:
 # Recommend movies for user_id 0
 print('Recommendations')
-print(recommend_movies(0, user_similarity_matrix, user_item_rating_matrix, n_top_users=5, n_recommendations=5))
+print(recommend_movies(6, user_similarity_matrix, user_item_rating_matrix, n_top_users=5, n_recommendations=5))
 
 # Anti-recommend movies for user_id 0
 print('Anti-recommendations')
-print(anti_recommend_movies(0, user_similarity_matrix, user_item_rating_matrix, n_least_similar_users=5, n_recommendations=5))
+print(anti_recommend_movies(6, user_similarity_matrix, user_item_rating_matrix, n_least_similar_users=5, n_recommendations=5))
