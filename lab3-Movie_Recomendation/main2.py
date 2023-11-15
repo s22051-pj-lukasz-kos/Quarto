@@ -209,6 +209,15 @@ class MovieRecommender:
 
         return anti_recommendations[:num_anti_recommendations]
 
+    def get_user_name(self, user_id):
+        """
+        Print the user name for a given user ID.
+
+        Parameters:
+            user_id (int): ID of the target user.
+        """
+        print(self.users_df.loc[user_id,'user_name'])
+
 
 def main():
     # File paths
@@ -220,7 +229,8 @@ def main():
     recommender = MovieRecommender(movies_file_path, users_file_path, ratings_file_path)
 
     # Choose a sample user for testing
-    sample_user_id = 0
+    sample_user_id = 4
+    recommender.get_user_name(sample_user_id)
 
     # Find similar users
     similar_users = recommender.find_similar_users(sample_user_id)
