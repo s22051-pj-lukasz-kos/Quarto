@@ -20,8 +20,8 @@ region" by Benzaouia Mohammed *et al*.
 
 The first version of the solution was accidentally placed in [another repository](https://github.com/s22051-pj-lukasz-kos/fuzzy-logic-irrigation).
 
-## Laboratory 3 - Movie Recomendation (machine learning)
+## Laboratory 3 - Movie Recommender (machine learning)
 
 Deadline: 16.11.2023
 
-TODO:
+Movie Recommender is a Python program designed to offer personalized movie suggestions based on user preferences and collaborative filtering. It clusters movies using K-means by genres, builds a user-movie matrix with ratings, and utilizes K-nearest neighbors algorithm to find similar users for recommendation generation.

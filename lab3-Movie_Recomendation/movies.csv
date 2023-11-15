@@ -1,206 +1,206 @@
-movie_id,title
-1,Polowanie na Czerwony Październik
-2,Rick & Morty
-3,The Big Bang Theory
-4,Braveheart
-5,The Expanse
-6,Miasteczko South Park
-7,Kraina Lodu
-8,Dziennik Bridget Jones
-9,Kapitan Ameryka: Wojna bohaterów
-10,Avengers: Czas Ultrona
-11,Terminator 2
-12,Planeta Singli
-13,Listy do M.
-14,Listy do M. 2
-15,Forrest Gump
-16,Ex Machina
-17,Gran Torino
-18,Cicha Noc
-19,Battleship: Bitwa o Ziemię
-20,Narodziny Gwiazdy
-21,Kapitan Phillips
-22,Grand Budapest Hotel
-23,Wyjazd integracyjny
-24,John Wick
-25,Narcos
-26,Terminal
-27,Ona
-28,Whiplash
-29,Diabeł ubiera się u Prady
-30,Dom z papieru
-31,Peaky Blinders
-32,Contratiempo 
-33,La Cara Oculta
-34,Palacz zwłok
-35,Żołnierze kosmosu 3: Grabieżca
-36,Oni żyją
-37,Buntownik z wyboru
-38,Transformers: Zemsta upadłych
-39,Krótki film o zabijaniu
-40,E=mc2
-41,Siedem
-42,Bunt
-43,Żelazny rycerz
-44,Dzieci Triady
-45,Ghost Dog: Droga samuraja
-46,Prometeusz
-47,Kod da Vinci
-48,John Rambo
-49,Taksówkarz
-50,Kanał
-51,Dobry zły i brzydki
-52,Dwunastu gniewnych ludzi
-53,Slumdog. Milioner z ulicy
-54,Drive
-55,Łowca jeleni 
-56,Mechanik
-57,The Raid
-58,Stalker
-59,Zodiak
-60,Gabinet doktora Caligari
-61,M - Morderca
-62,Walc z Baszirem
-63,Siedmiu samurajów
-64,Desperaci
-65,Memento
-66,Kill Bill
-67,Harakiri
-68,Martwica mózgu
-69,Big Lebowski
-70,Pi
-71,Obcy
-72,Weekend
-73,Prawdziwe męstwo
-74,Ciacho
-75,Vicky Cristina Barcelona
-76,Closer
-77,Wyśnione miłości
-78,Natural born killers
-79,Sukcesja
-80,Metropolis
-81,Fight Club
-82,Sarnie Żniwo
-83,Don't look up
-84,Gra o tron
-85,Kapitan Bomba
-86,Ocean strachu
-87,The Boys
-88,Suits
-89,Avengers: End game
-90,Django
-91,Interstellar
-92,Monty Python i Święty Graal
-93,Barbie 
-94,Big hero 6
-95,Wall-e
-96,Star Wars: Episode V
-97,American sniper
-98,Deadpool
-99,W lesie dziś nie zaśnie nikt
-100,The Lord of the Rings: The Fellowship of the Ring
-101,Aquamen
-102,Johnny 
-103,Bękarty wojny
-104,Czarnobyl
-105,Awatar: Legenda Aanga
-106,Wyspa tajemnic
-107,Titanic
-108,Harry Potter i Kamień Filozoficzny
-109,Skazani na Shawshank
-110,Na rauszu
-111,Pod Mocnym Aniołem
-112,300
-113,Sherlock 2010
-114,STULATEK KTÓRY WYSKOCZYŁ PRZEZ OKNO I ZNIKNĄŁ
-115,Dzień Świra
-116,Wiedźmin (karolak)
-117,Wiedźmin (netflix)
-118,Ranczo
-119,Plebania
-120,Joker
-121,Seksmisja
-122,Znachor
-123,goście goście
-124,365 dni
-125,Nie czas umierać
-126,Prison break
-127,Reacher
-128,Wściekłe Pięści Węża
-129,Labirynt
-130,Get out
-131,Coś
-133,Switch
-134,Kobiety Mafii
-135,Ludzka stonoga
-136,Nietykalni
-137,Pianista
-138,Incepcja
-139,Coco
-140,Leon Zawodowiec
-141,Gladiator
-142,Zapach Kobiety
-143,W Pogoni za Szczęściem
-144,Bogowie 
-145,Siedem Dusz
-146,Oppenheimer
-147,Adwokat Diabła
-148,Spider-Man Uniwersum
-149,Złap mnie jeśli potrafisz
-150,Requiem dla Snu
-151,Miś
-152,Gattaca Szok Przyszłości
-153,Edward Nożycoręki
-154,RoboCop
-155,Equilibrium
-156,Elizjum
-157,Wyspa
-158,Pamięć Absolutna
-159,Sędzia Dredd
-160,Pewnego razu w Hollywood 
-161,Morbius
-162,Jurassic World
-163,Jurassic World 2
-164,Pulp Fiction
-165,Avengers: Infinity War 
-166,Kac Vegas
-167,Kac Vegas 3
-168,Wilk z Wall Street 
-169,V jak vendetta
-170,Bitwa pod Wiedniem 
-171,Deadpool 2
-172,Zielona Mila
-173,Obecność
-174,Szósty zmysł
-175,Matrix
-176,Szeregowiec Ryan
-177,1917
-178,Batman - początek
-179,xXx 2: Następny poziom
-180,New York Taxi
-181,Taxi 1
-182,RoboCop 3
-183,Wściekle szybcy 2015
-184,Speed 2: Wyścig z czasem
-185,Designated Survivor
-186,Strażnicy Galaktyki vol. 1
-187,Co mi zrobisz jak mnie złapiesz
-188,Dywizjon 303. Historia prawdziwa
-189,Dlaczego nie 
-190,Avatar
-191,Lista Schindlera
-192,Ciekawy przypadek Benjamina Buttona
-193,Mroczny Rycerz
-194,Ojciec Chrzestny 
-195,Trudne sprawy 
-196,Green Book 
-197,Mój przyjaciel Hachiko
-198,Pitbull. Niebezpieczne kobiety
-199,Pitbull. Nowe porządki 
-200,Król Artur: Legenda Miecza
-201,Black Mirror
-202,Ojciec Chrzestny II 
-203,Kevin sam w domu 
-204,Jestem legendą 
-205,Shrek
-206,Stranger Things
+movie_id,title,genres
+1,Polowanie na Czerwony Październik,Action|Adventure|Thriller
+2,Rick & Morty,Adventure|Animation|Comedy|Sci-Fi
+3,The Big Bang Theory,Comedy
+4,Braveheart,Action|Drama|War
+5,The Expanse,Drama|Sci-Fi
+6,Miasteczko South Park,Animation|Comedy
+7,Kraina Lodu,Animation|Children|Comedy|Musical
+8,Dziennik Bridget Jones,Comedy|Drama|Romance
+9,Kapitan Ameryka: Wojna bohaterów,Action|Sci-Fi|Thriller
+10,Avengers: Czas Ultrona,Action|Adventure|Sci-Fi
+11,Terminator 2,Action|Sci-Fi
+12,Planeta Singli,Comedy|Polish|Romance
+13,Listy do M.,Christmas|Polish|Romance
+14,Listy do M. 2,Christmas|Polish|Romance
+15,Forrest Gump,Comedy|Drama|Romance|War
+16,Ex Machina,Drama|Sci-Fi|Thriller
+17,Gran Torino,Crime|Drama
+18,Cicha Noc,Christmas|Drama|Polish
+19,Battleship: Bitwa o Ziemię,Action|Sci-Fi|Thriller|IMAX
+20,Narodziny Gwiazdy,Drama|Musical
+21,Kapitan Phillips,Adventure|Biographical|Drama|Thriller
+22,Grand Budapest Hotel,Comedy|Drama
+23,Wyjazd integracyjny,Comedy|Polish
+24,John Wick,Action|Thriller
+25,Narcos,Biographical|Crime|Drama
+26,Terminal,Comedy|Drama|Romance
+27,Ona,Drama|Romance|Sci-Fi
+28,Whiplash,Drama
+29,Diabeł ubiera się u Prady,Comedy|Drama
+30,Dom z papieru,Action|Thriller
+31,Peaky Blinders,Crime|Drama
+32,Contratiempo,Crime
+33,La Cara Oculta,Thriller
+34,Palacz zwłok,Drama|Horror|Psychological
+35,Żołnierze kosmosu 3: Grabieżca,Action|Sci-Fi
+36,Oni żyją,Action|Sci-Fi|Thriller
+37,Buntownik z wyboru,Drama|Romance
+38,Transformers: Zemsta upadłych,Action|Adventure|Sci-Fi|IMAX
+39,Krótki film o zabijaniu,Drama|Polish|Psychological
+40,E=mc2,Action|Comedy|Polish
+41,Siedem,Mystery|Thriller
+42,Bunt,Action|Drama
+43,Żelazny rycerz,Adventure
+44,Dzieci Triady,Action|Crime|Drama|Thriller
+45,Ghost Dog: Droga samuraja,Crime|Drama
+46,Prometeusz,Action|Horror|Sci-Fi|IMAX
+47,Kod da Vinci,Drama|Mystery|Thriller
+48,John Rambo,Action|Drama|Thriller|War
+49,Taksówkarz,Crime|Drama|Thriller
+50,Kanał,Drama|War
+51,Dobry zły i brzydki,Western
+52,Dwunastu gniewnych ludzi,Drama
+53,Slumdog. Milioner z ulicy,Crime|Drama|Romance
+54,Drive,Crime|Drama|Film-Noir|Thriller
+55,Łowca jeleni,Drama|War
+56,Mechanik,Drama|Thriller
+57,The Raid,Action|Crime
+58,Stalker,Drama|Mystery|Sci-Fi
+59,Zodiak,Crime|Drama|Thriller
+60,Gabinet doktora Caligari,Crime|Fantasy|Horror
+61,M - Morderca,Thriller
+62,Walc z Baszirem,Animation|Documentary|Drama|War
+63,Siedmiu samurajów,Action|Adventure|Drama
+64,Desperaci,Crime|Thriller
+65,Memento,Mystery|Thriller
+66,Kill Bill,Action|Crime|Thriller
+67,Harakiri,Drama
+68,Martwica mózgu,Comedy|Fantasy|Horror
+69,Big Lebowski,Comedy|Crime
+70,Pi,Drama|Sci-Fi|Thriller
+71,Obcy,Horror|Sci-Fi
+72,Weekend,Action|Comedy|Crime|Polish
+73,Prawdziwe męstwo,Western
+74,Ciacho,Comedy|Polish
+75,Vicky Cristina Barcelona,Comedy|Drama|Romance
+76,Closer,Drama|Romance
+77,Wyśnione miłości,Drama|Romance
+78,Natural born killers,Action|Crime|Thriller
+79,Sukcesja,Drama
+80,Metropolis,Drama|Sci-Fi
+81,Fight Club,Action|Crime|Drama|Thriller
+82,Sarnie Żniwo,Comedy|Polish
+83,Don't look up,Comedy|Drama|Sci-Fi
+84,Gra o tron,Adventure|Drama|Fantasy
+85,Kapitan Bomba,Animation|Comedy|Polish
+86,Ocean strachu,Drama|Thriller
+87,The Boys,Action|Drama|Sci-Fi
+88,Suits,Drama
+89,Avengers: End game,Action|Sci-Fi
+90,Django,Action|Drama|Western
+91,Interstellar,Sci-Fi|IMAX
+92,Monty Python i Święty Graal,Adventure|Comedy|Fantasy
+93,Barbie,Comedy|Drama|Fantasy
+94,Big hero 6,Action|Animation|Comedy
+95,Wall-e,Animation|Children|Sci-Fi
+96,Star Wars: Episode V,Action|Adventure|Sci-Fi
+97,American sniper,Action|War
+98,Deadpool,Action|Adventure|Comedy|Sci-Fi
+99,W lesie dziś nie zaśnie nikt,Horror|Polish
+100,The Lord of the Rings: The Fellowship of the Ring,Adventure|Fantasy
+101,Aquamen,Action|Sci-Fi
+102,Johnny,Biographical|Polish
+103,Bękarty wojny,Action|Drama|War
+104,Czarnobyl,Drama
+105,Awatar: Legenda Aanga,Adventure|Animation|Fantasy
+106,Wyspa tajemnic,Drama|Mystery|Thriller
+107,Titanic,Drama|Romance
+108,Harry Potter i Kamień Filozoficzny,Adventure|Children|Fantasy
+109,Skazani na Shawshank,Crime|Drama
+110,Na rauszu,Comedy|Drama
+111,Pod Mocnym Aniołem,Drama|Polish
+112,300,Action|Fantasy|War|IMAX
+113,Sherlock 2010,Crime|Drama
+114,STULATEK KTÓRY WYSKOCZYŁ PRZEZ OKNO I ZNIKNĄŁ,Adventure|Comedy
+115,Dzień Świra,Comedy|Drama|Polish|Psychological
+116,Wiedźmin (karolak),Adventure|Fantasy|Polish
+117,Wiedźmin (netflix),Adventure|Fantasy
+118,Ranczo,Comedy|Polish
+119,Plebania,Drama|Polish
+120,Joker,Crime|Drama|Psychological
+121,Seksmisja,Comedy|Polish|Sci-Fi
+122,Znachor,Drama|Polish
+123,goście goście,Comedy|Fantasy
+124,365 dni,Erotic
+125,Nie czas umierać,Action
+126,Prison break,Crime|Drama|Thriller
+127,Reacher,Action
+128,Wściekłe Pięści Węża,Action|Comedy|Polish
+129,Labirynt,Drama|Mystery|Thriller
+130,Get out,Horror
+131,Coś,Horror|Sci-Fi
+133,Switch,Comedy|Romance
+134,Kobiety Mafii,Action|Polish
+135,Ludzka stonoga,Horror
+136,Nietykalni,Comedy|Drama
+137,Pianista,Drama|War
+138,Incepcja,Action|Drama|Sci-Fi|IMAX
+139,Coco,Adventure|Animation|Children
+140,Leon Zawodowiec,Action|Crime|Drama|Thriller
+141,Gladiator,Action|Adventure|Drama
+142,Zapach Kobiety,Drama
+143,W Pogoni za Szczęściem,Drama
+144,Bogowie,Biographical|Drama|Polish
+145,Siedem Dusz,Drama
+146,Oppenheimer,Biographical|Drama
+147,Adwokat Diabła,Drama|Mystery|Thriller
+148,Spider-Man Uniwersum,ActionAnimation|Sci-Fi
+149,Złap mnie jeśli potrafisz,Crime|Drama
+150,Requiem dla Snu,Drama|Thriller
+151,Miś,Comedy|Polish
+152,Gattaca Szok Przyszłości,Drama|Sci-Fi|Thriller
+153,Edward Nożycoręki,Drama|Fantasy|Romance
+154,RoboCop,Action|Drama|Sci-Fi|Thriller
+155,Equilibrium,Action|Sci-Fi|Thriller
+156,Elizjum,Action|Drama|Sci-Fi|IMAX
+157,Wyspa,Action|Sci-Fi
+158,Pamięć Absolutna,Action|Sci-Fi|Thriller
+159,Sędzia Dredd,Action|Crime|Sci-Fi
+160,Pewnego razu w Hollywood,Crime|Drama
+161,Morbius,Action|Horror|Sci-Fi|
+162,Jurassic World,Action|Drama|Sci-Fi|Thriller
+163,Jurassic World 2,Action|Drama|Sci-Fi|Thriller
+164,Pulp Fiction,Comedy|Crime|Drama|Thriller
+165,Avengers: Infinity War,Action|Adventure|Sci-Fi
+166,Kac Vegas,Comedy|Crime
+167,Kac Vegas 3,Comedy
+168,Wilk z Wall Street,Comedy|Crime|Drama
+169,V jak vendetta,Action|Sci-Fi|Thriller|IMAX
+170,Bitwa pod Wiedniem,Adventure|Drama|Polish
+171,Deadpool 2,Action|Comedy|Sci-Fi
+172,Zielona Mila,Crime|Drama
+173,Obecność,Horror|Thriller
+174,Szósty zmysł,Drama|Horror|Mystery
+175,Matrix,Action|Adventure|Sci-Fi|Thriller
+176,Szeregowiec Ryan,Action|Drama|War
+177,1917,Drama|War
+178,Batman - początek,Action|Crime|IMAX
+179,xXx 2: Następny poziom,Action|Crime|Thriller
+180,New York Taxi,Action|Comedy
+181,Taxi 1,Action|Comedy
+182,RoboCop 3,Action|Crime|Drama|Sci-Fi|Thriller
+183,Wściekle szybcy 2015,Comedy
+184,Speed 2: Wyścig z czasem,Action|Romance|Thriller
+185,Designated Survivor,Thriller
+186,Strażnicy Galaktyki vol. 1,Action|Adventure|Sci-Fi
+187,Co mi zrobisz jak mnie złapiesz,Crime|Drama
+188,Dywizjon 303. Historia prawdziwa,Drama|Polish|War
+189,Dlaczego nie,Comedy|Polish|Romance
+190,Avatar,Action|Adventure|Sci-Fi|IMAX
+191,Lista Schindlera,Drama|War
+192,Ciekawy przypadek Benjamina Buttona,Drama|Fantasy|Mystery|Romance
+193,Mroczny Rycerz,Action|Adventure|Crime|IMAX
+194,Ojciec Chrzestny,Crime|Drama
+195,Trudne sprawy,Documentary|Polish
+196,Green Book,Comedy|Drama
+197,Mój przyjaciel Hachiko,Drama
+198,Pitbull. Niebezpieczne kobiety,Action|Drama|Polish
+199,Pitbull. Nowe porządki,Action|Drama|Polish
+200,Król Artur: Legenda Miecza,Adventure|Drama
+201,Black Mirror,Drama|Sci-Fi|Thriller
+202,Ojciec Chrzestny II,Crime|Drama
+203,Kevin sam w domu,Children|Christmas|Comedy
+204,Jestem legendą,Action|Horror|Sci-Fi|Thriller
+205,Shrek,Animation|Children|Comedy|Fantasy
+206,Stranger Things,Drama|Horror|Sci-Fi
