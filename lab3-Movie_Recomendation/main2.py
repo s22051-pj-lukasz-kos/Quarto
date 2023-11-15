@@ -7,10 +7,13 @@ from sklearn.neighbors import NearestNeighbors
 
 class MovieRecommender:
     """
+
     Movie Recommendrt is a Python program designed to offer personalized movie suggestions
     based on user preferences and collaborative filtering. It clusters movies using K-means,
     builds a user-movie matrix with ratings, and utilizes K-nearest neighbors
     to find similar users for recommendation generation.
+
+    Authors: Łukasz Kos, Emilian Murawski
 
     USER GUIDE:
     1. **Install Dependencies:**
