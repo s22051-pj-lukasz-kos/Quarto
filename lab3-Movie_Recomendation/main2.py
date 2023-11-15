@@ -229,7 +229,7 @@ def main():
     recommender = MovieRecommender(movies_file_path, users_file_path, ratings_file_path)
 
     # Choose a sample user for testing
-    sample_user_id = 4
+    sample_user_id = 0
     recommender.get_user_name(sample_user_id)
 
     # Find similar users
