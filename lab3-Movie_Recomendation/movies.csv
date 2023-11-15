@@ -30,7 +30,7 @@ movie_id,title,genres
 29,Diabeł ubiera się u Prady,Comedy|Drama
 30,Dom z papieru,Action|Thriller
 31,Peaky Blinders,Crime|Drama
-32,Contratiempo ,Crime
+32,Contratiempo,Crime
 33,La Cara Oculta,Thriller
 34,Palacz zwłok,Drama|Horror|Psychological
 35,Żołnierze kosmosu 3: Grabieżca,Action|Sci-Fi
@@ -53,7 +53,7 @@ movie_id,title,genres
 52,Dwunastu gniewnych ludzi,Drama
 53,Slumdog. Milioner z ulicy,Crime|Drama|Romance
 54,Drive,Crime|Drama|Film-Noir|Thriller
-55,Łowca jeleni ,Drama|War
+55,Łowca jeleni,Drama|War
 56,Mechanik,Drama|Thriller
 57,The Raid,Action|Crime
 58,Stalker,Drama|Mystery|Sci-Fi
@@ -91,7 +91,7 @@ movie_id,title,genres
 90,Django,Action|Drama|Western
 91,Interstellar,Sci-Fi|IMAX
 92,Monty Python i Święty Graal,Adventure|Comedy|Fantasy
-93,Barbie ,Comedy|Drama|Fantasy
+93,Barbie,Comedy|Drama|Fantasy
 94,Big hero 6,Action|Animation|Comedy
 95,Wall-e,Animation|Children|Sci-Fi
 96,Star Wars: Episode V,Action|Adventure|Sci-Fi
@@ -100,7 +100,7 @@ movie_id,title,genres
 99,W lesie dziś nie zaśnie nikt,Horror|Polish
 100,The Lord of the Rings: The Fellowship of the Ring,Adventure|Fantasy
 101,Aquamen,Action|Sci-Fi
-102,Johnny ,Biographical|Polish
+102,Johnny,Biographical|Polish
 103,Bękarty wojny,Action|Drama|War
 104,Czarnobyl,Drama
 105,Awatar: Legenda Aanga,Adventure|Animation|Fantasy
@@ -141,7 +141,7 @@ movie_id,title,genres
 141,Gladiator,Action|Adventure|Drama
 142,Zapach Kobiety,Drama
 143,W Pogoni za Szczęściem,Drama
-144,Bogowie ,Biographical|Drama|Polish
+144,Bogowie,Biographical|Drama|Polish
 145,Siedem Dusz,Drama
 146,Oppenheimer,Biographical|Drama
 147,Adwokat Diabła,Drama|Mystery|Thriller
@@ -157,17 +157,17 @@ movie_id,title,genres
 157,Wyspa,Action|Sci-Fi
 158,Pamięć Absolutna,Action|Sci-Fi|Thriller
 159,Sędzia Dredd,Action|Crime|Sci-Fi
-160,Pewnego razu w Hollywood ,Crime|Drama
+160,Pewnego razu w Hollywood,Crime|Drama
 161,Morbius,Action|Horror|Sci-Fi|
 162,Jurassic World,Action|Drama|Sci-Fi|Thriller
 163,Jurassic World 2,Action|Drama|Sci-Fi|Thriller
 164,Pulp Fiction,Comedy|Crime|Drama|Thriller
-165,Avengers: Infinity War ,Action|Adventure|Sci-Fi
+165,Avengers: Infinity War,Action|Adventure|Sci-Fi
 166,Kac Vegas,Comedy|Crime
 167,Kac Vegas 3,Comedy
-168,Wilk z Wall Street ,Comedy|Crime|Drama
+168,Wilk z Wall Street,Comedy|Crime|Drama
 169,V jak vendetta,Action|Sci-Fi|Thriller|IMAX
-170,Bitwa pod Wiedniem ,Adventure|Drama|Polish
+170,Bitwa pod Wiedniem,Adventure|Drama|Polish
 171,Deadpool 2,Action|Comedy|Sci-Fi
 172,Zielona Mila,Crime|Drama
 173,Obecność,Horror|Thriller
@@ -186,21 +186,21 @@ movie_id,title,genres
 186,Strażnicy Galaktyki vol. 1,Action|Adventure|Sci-Fi
 187,Co mi zrobisz jak mnie złapiesz,Crime|Drama
 188,Dywizjon 303. Historia prawdziwa,Drama|Polish|War
-189,Dlaczego nie ,Comedy|Polish|Romance
+189,Dlaczego nie,Comedy|Polish|Romance
 190,Avatar,Action|Adventure|Sci-Fi|IMAX
 191,Lista Schindlera,Drama|War
 192,Ciekawy przypadek Benjamina Buttona,Drama|Fantasy|Mystery|Romance
 193,Mroczny Rycerz,Action|Adventure|Crime|IMAX
-194,Ojciec Chrzestny ,Crime|Drama
-195,Trudne sprawy ,Documentary|Polish
-196,Green Book ,Comedy|Drama
+194,Ojciec Chrzestny,Crime|Drama
+195,Trudne sprawy,Documentary|Polish
+196,Green Book,Comedy|Drama
 197,Mój przyjaciel Hachiko,Drama
 198,Pitbull. Niebezpieczne kobiety,Action|Drama|Polish
-199,Pitbull. Nowe porządki ,Action|Drama|Polish
+199,Pitbull. Nowe porządki,Action|Drama|Polish
 200,Król Artur: Legenda Miecza,Adventure|Drama
 201,Black Mirror,Drama|Sci-Fi|Thriller
-202,Ojciec Chrzestny II ,Crime|Drama
-203,Kevin sam w domu ,Children|Christmas|Comedy
-204,Jestem legendą ,Action|Horror|Sci-Fi|Thriller
+202,Ojciec Chrzestny II,Crime|Drama
+203,Kevin sam w domu,Children|Christmas|Comedy
+204,Jestem legendą,Action|Horror|Sci-Fi|Thriller
 205,Shrek,Animation|Children|Comedy|Fantasy
 206,Stranger Things,Drama|Horror|Sci-Fi

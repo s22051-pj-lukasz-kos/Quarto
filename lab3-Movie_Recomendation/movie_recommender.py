@@ -7,10 +7,9 @@ from sklearn.neighbors import NearestNeighbors
 
 class MovieRecommender:
     """
-
-    Movie Recommendrt is a Python program designed to offer personalized movie suggestions
-    based on user preferences and collaborative filtering. It clusters movies using K-means,
-    builds a user-movie matrix with ratings, and utilizes K-nearest neighbors
+    Movie Recommender is a Python program designed to offer personalized movie suggestions
+    based on user preferences and collaborative filtering. It clusters movies using K-means
+    by genres, builds a user-movie matrix with ratings, and utilizes K-nearest neighbors algorithm
     to find similar users for recommendation generation.
 
     Authors: Łukasz Kos, Emilian Murawski
@@ -27,6 +26,7 @@ class MovieRecommender:
     - Create three CSV files: 'movies.csv' (movie information), 'users.csv' (user information),
         and 'ratings.csv' (movie ratings).
     - Ensure the CSV files have columns like 'movie_id', 'title', 'user_id', 'rating', etc.
+    - Use examples of those files from repository to prepare your own data.
 
     3. **Choose a User for Recommendations:**
     - In the script, set the variable 'sample_user_id' to the desired user ID for testing.
@@ -211,12 +211,12 @@ class MovieRecommender:
 
     def get_user_name(self, user_id):
         """
-        Print the user name for a given user ID.
+        Print the username for a given user ID.
 
         Parameters:
             user_id (int): ID of the target user.
         """
-        print(self.users_df.loc[user_id,'user_name'])
+        print(self.users_df.loc[user_id, 'user_name'])
 
 
 def main():
