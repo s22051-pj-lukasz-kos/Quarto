@@ -103,6 +103,7 @@ X_test_heart_scaled = scaler.transform(X_test_heart)
 X_train_wheat_scaled = scaler.fit_transform(X_train_wheat)
 X_test_wheat_scaled = scaler.transform(X_test_wheat)
 
+
 # Decision Tree parameters
 dt_params = {
     'max_depth': 5,
