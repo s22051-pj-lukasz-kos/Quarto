@@ -1,10 +1,9 @@
 import pandas as pd
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
-from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
-from sklearn.model_selection import GridSearchCV
-
+from sklearn.tree import DecisionTreeClassifier
 
 # Load the dataset
 file_path = 'seeds_dataset.txt'
@@ -28,25 +27,43 @@ scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
-'''
-Model training - Support Vector Machine (SVM)
-You can improve this model by tweaking those parameters: 
-- kernel
-- C
-- gamma
-'''
-svm_classifier = SVC(kernel='rbf', random_state=42)
+"""
+For Decision Trees, the most critical parameters are:
+- max_depth: The maximum depth of the tree. It controls the maximum number of levels in the tree.
+  A higher value can lead to overfitting.
+- min_samples_split: The minimum number of samples required to split an internal node. 
+  Higher values prevent the tree from making overly specific and detailed splits.
+- min_samples_leaf: The minimum number of samples required to be in a leaf node.
+  it controls the granularity of the leaves. Higher values prevent the tree from creating tiny leaves.
+- criterion: The function to measure the quality of a split. 
+  Supported criteria are "gini" for the Gini impurity and "entropy" for the information gain.
+
+For SVM (Support Vector Machine), the most critical parameters are:
+- C: Regularization parameter. The strength of the regularization is inversely proportional to C.
+  Must be strictly positive. Type float, default is 1.
+- Kernel Type: Determines the type of hyperplane used to separate the data.
+  This includes linear, poly, rbf, and sigmoid.
+- Gamma: Kernel coefficient for ‘rbf’, ‘poly’ and ‘sigmoid’. Values are 'scale' (default), 'auto' or
+  float (non-negative).
+"""
+
+dt_classifier = DecisionTreeClassifier(max_depth=5, random_state=42, criterion="gini")
+svm_classifier = SVC(C=1, kernel='sigmoid', gamma='scale')
 
 # Train the classifier
+dt_classifier.fit(X_train, y_train)
 svm_classifier.fit(X_train_scaled, y_train)
 
 # Predict on the test set
+dt_predictions = dt_classifier.predict(X_test)
 svm_predictions = svm_classifier.predict(X_test_scaled)
 
 # Evaluation
 # Accuracy is a ratio of correctly predicted observation to the total number of observations
-accuracy = accuracy_score(y_test, svm_predictions)
-print("Accuracy:", accuracy)
+accuracy_dt = accuracy_score(y_test, dt_predictions)
+print("Accuracy for DT:", accuracy_dt)
+accuracy_svm = accuracy_score(y_test, svm_predictions)
+print("Accuracy for SVM:", accuracy_svm)
 
 '''
 Confusion matrix (error matrix) is a useful tool for multiclass classification problems
@@ -61,8 +78,10 @@ In second row (actual class two):
 - third column show number of instances incorrectly classified as class three (False Positives)
 etc. 
 '''
-conf_matrix = confusion_matrix(y_test, svm_predictions)
-print("Confusion Matrix:\n", conf_matrix)
+conf_matrix_dt = confusion_matrix(y_test, dt_predictions)
+print("Confusion Matrix for DT:\n", conf_matrix_dt)
+conf_matrix_svm = confusion_matrix(y_test, svm_predictions)
+print("Confusion Matrix for SVM:\n", conf_matrix_svm)
 
 '''
 Classification Report with Precision, Recall and F1-Score
@@ -76,5 +95,7 @@ to the all observations in actual class.
 
 F1 Score is the average of Precision and Recall.
 '''
-class_report = classification_report(y_test, svm_predictions)
-print("Classification Report:\n", class_report)
+class_report_dt = classification_report(y_test, dt_predictions)
+print("Classification Report for DT:\n", class_report_dt)
+class_report_svm = classification_report(y_test, svm_predictions)
+print("Classification Report for SVM:\n", class_report_svm)
