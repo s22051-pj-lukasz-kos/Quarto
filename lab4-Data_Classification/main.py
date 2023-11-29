@@ -4,6 +4,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 from sklearn.model_selection import GridSearchCV
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 # Load the dataset
@@ -28,14 +30,16 @@ scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
-'''
-Model training - Support Vector Machine (SVM)
-You can improve this model by tweaking those parameters: 
-- kernel
-- C
-- gamma
-'''
-svm_classifier = SVC(kernel='rbf', random_state=42)
+"""
+For SVM (Support Vector Machine), the most critical parameters are:
+- C: Regularization parameter. The strength of the regularization is inversely proportional to C.
+  Must be strictly positive. Type float, default is 1.
+- Kernel Type: Determines the type of hyperplane used to separate the data.
+  This includes linear, poly, rbf, and sigmoid.
+- Gamma: Kernel coefficient for ‘rbf’, ‘poly’ and ‘sigmoid’. Values are 'scale' (default), 'auto' or
+  float (non-negative).
+"""
+svm_classifier = SVC(C=1, kernel='sigmoid', gamma='scale')
 
 # Train the classifier
 svm_classifier.fit(X_train_scaled, y_train)
