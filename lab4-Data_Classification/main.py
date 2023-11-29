@@ -21,7 +21,6 @@ def train_and_evaluate_classifier(classifier, X_train, y_train, X_test, y_test):
        Returns:
        None: Prints accuracy, confusion matrix, and classification report of the classifier on the test data.
     """
-    # Train the classifier
     classifier.fit(X_train, y_train)
 
     # Predict on the test set
@@ -103,6 +102,25 @@ X_test_heart_scaled = scaler.transform(X_test_heart)
 X_train_wheat_scaled = scaler.fit_transform(X_train_wheat)
 X_test_wheat_scaled = scaler.transform(X_test_wheat)
 
+"""
+For Decision Trees, the most critical parameters are:
+- max_depth: The maximum depth of the tree. It controls the maximum number of levels in the tree.
+A higher value can lead to overfitting.
+- min_samples_split: The minimum number of samples required to split an internal node. 
+Higher values prevent the tree from making overly specific and detailed splits.
+- min_samples_leaf: The minimum number of samples required to be in a leaf node.
+It controls the granularity of the leaves. Higher values prevent the tree from creating tiny leaves.
+- criterion: The function to measure the quality of a split. 
+Supported criteria are "gini" for the Gini impurity and "entropy" for the information gain.
+
+For SVM (Support Vector Machine), the most critical parameters are:
+- C: Regularization parameter. The strength of the regularization is inversely proportional to C.
+  Must be strictly positive. Type float, default is 1.
+- Kernel Type: Determines the type of hyperplane used to separate the data.
+  This includes linear, poly, rbf, and sigmoid.
+- Gamma: Kernel coefficient for ‘rbf’, ‘poly’ and ‘sigmoid’. Values are 'scale' (default), 'auto' or
+  float (non-negative).
+"""
 
 # Decision Tree parameters
 dt_params = {
