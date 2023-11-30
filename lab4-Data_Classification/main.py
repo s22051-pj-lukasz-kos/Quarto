@@ -132,7 +132,7 @@ dt_params = {
 # SVM parameters
 svm_params = {
     'C': 1,
-    'kernel': 'sigmoid',
+    'kernel': 'rbf',
     'gamma': 'scale'
 }
 
