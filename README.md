@@ -25,3 +25,11 @@ The first version of the solution was accidentally placed in [another repository
 Deadline: 16.11.2023
 
 Movie Recommender is a Python program designed to offer personalized movie suggestions based on user preferences and collaborative filtering. It clusters movies using K-means by genres, builds a user-movie matrix with ratings, and utilizes K-nearest neighbors algorithm to find similar users for recommendation generation.
+
+## Laboratory 4 - Classification (Decision Tree and Support Vector Machine)
+
+Deadline: 30.11.2023
+
+Classification of two problems using Decision Tree and Support Vector Machine:
+- classification of wheat seeds on class 1, 2 and 3 that take into account perimeter of seed, compactness, length of kernel, width of kernel, asymmetry coefficient and length of kernel groove.
+- classification of the occurrence of heart disease that takes into account age, sex, chest pain type, resting blood pressure, serum cholesterol, fasting blood sugar, resting electrocardiographic results, maximum heart rate achieved, exercise induced angina and ST depression induced by exercise relative to rest.  
