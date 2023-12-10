@@ -32,4 +32,9 @@ Deadline: 30.11.2023
 
 Classification of two problems using Decision Tree and Support Vector Machine:
 - classification of wheat seeds on class 1, 2 and 3 that take into account perimeter of seed, compactness, length of kernel, width of kernel, asymmetry coefficient and length of kernel groove.
-- classification of the occurrence of heart disease that takes into account age, sex, chest pain type, resting blood pressure, serum cholesterol, fasting blood sugar, resting electrocardiographic results, maximum heart rate achieved, exercise induced angina and ST depression induced by exercise relative to rest.  
+- classification of the occurrence of heart disease that takes into account age, sex, chest pain type, resting blood pressure, serum cholesterol, fasting blood sugar, resting electrocardiographic results, maximum heart rate achieved, exercise induced angina and ST depression induced by exercise relative to rest.
+
+## Laboratory 5 - Neural Networks (TensorFlow)
+
+Deadline: 15.12.2023
+
