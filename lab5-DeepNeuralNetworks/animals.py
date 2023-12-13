@@ -17,7 +17,7 @@ model.add(layers.MaxPooling2D((2, 2)))
 model.add(layers.Conv2D(64, (3, 3), activation='relu'))
 model.add(layers.Flatten())
 model.add(layers.Dense(64, activation='relu'))
-model.add(layers.Dense(10))
+model.add(layers.Dense(10, activation='softmax'))
 
 # Compile the model
 model.compile(optimizer='adam',
@@ -25,7 +25,7 @@ model.compile(optimizer='adam',
               metrics=['accuracy'])
 
 # Train the model
-history = model.fit(train_images, train_labels, epochs=10,
+history = model.fit(train_images, train_labels, epochs=12,
                     validation_data=(test_images, test_labels))
 
 # Evaluate the model
@@ -40,3 +40,12 @@ plt.ylabel('Accuracy')
 plt.ylim([0, 1])
 plt.legend(loc='lower right')
 plt.show()
+
+predictions = model.predict(test_images)
+predicted_labels = tf.argmax(predictions, axis=1)
+
+# Confusion Matrix using TensorFlow
+cm = tf.math.confusion_matrix(test_labels, predicted_labels, num_classes=10)
+
+print("\nConfusion matrix:")
+print(cm)
