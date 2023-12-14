@@ -37,7 +37,7 @@ Returns:
 - None
 
 Example:
-    python cifar10_classification.py
+    python cifar-10_classification.py
 """
 
 # Load CIFAR-10 dataset

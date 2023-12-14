@@ -37,7 +37,7 @@ Returns:
 - None
 
 Example:
-    python fashion_mnist_classification.py
+    python fashion-mnist_classification.py
 """
 
 
