@@ -8,7 +8,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import confusion_matrix, classification_report
 import numpy as np
-import tensorflow as tf
 from tensorflow.keras.models import Sequential  # pylint: disable=import-error, no-name-in-module
 from tensorflow.keras.layers import Dense  # pylint: disable=import-error, no-name-in-module
 from tensorflow.keras.utils import to_categorical  # pylint: disable=import-error, no-name-in-module
