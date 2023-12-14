@@ -5,6 +5,7 @@ Fashion-MNIST Image Classification using TensorFlow
 
 This program uses TensorFlow and Keras to build a Convolutional Neural Network (CNN)
 for image classification on the Fashion-MNIST dataset.
+It creates two models with different network sizes just for comparing purposes.
 
 Fashion-MNIST Dataset:
 - The Fashion-MNIST dataset consists of 60,000 28x28 grayscale images in 10 different classes.
@@ -43,51 +44,90 @@ from tensorflow.keras import datasets, layers, models  # pylint: disable=import-
 import matplotlib.pyplot as plt
 
 
+def plot_model_performance(history, model_name):
+    """Function to plot model performance"""
+    plt.plot(history.history['accuracy'], label='Train Accuracy (' + model_name + ')')
+    plt.plot(history.history['val_accuracy'], label='Val Accuracy (' + model_name + ')')
+    plt.plot(history.history['loss'], label='Train Loss (' + model_name + ')', linestyle="--")
+    plt.plot(history.history['val_loss'], label='Val Loss (' + model_name + ')', linestyle="--")
+
+
 # Load fashion-MNIST dataset
 (train_images, train_labels), (test_images, test_labels) = datasets.fashion_mnist.load_data()
 
 # Normalize pixel values to be between 0 and 1
 train_images, test_images = train_images / 255.0, test_images / 255.0
 
-# Define the CNN model
-model = models.Sequential()
-model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)))
-model.add(layers.MaxPooling2D((2, 2)))
-model.add(layers.Conv2D(64, (3, 3), activation='relu'))
-model.add(layers.MaxPooling2D((2, 2)))
-model.add(layers.Conv2D(64, (3, 3), activation='relu'))
-model.add(layers.Flatten())
-model.add(layers.Dense(64, activation='relu'))
-model.add(layers.Dense(10))
+# Define the first bigger model
+model1 = models.Sequential()
+model1.add(layers.Conv2D(64, (3, 3), activation='relu', input_shape=(28, 28, 1)))
+model1.add(layers.MaxPooling2D((2, 2)))
+model1.add(layers.Conv2D(128, (3, 3), activation='relu'))
+model1.add(layers.MaxPooling2D((2, 2)))
+model1.add(layers.Conv2D(128, (3, 3), activation='relu'))
+model1.add(layers.Flatten())
+model1.add(layers.Dense(128, activation='relu'))
+model1.add(layers.Dense(10))
 
 # Compile the model
-model.compile(optimizer='adam',
-              loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
-              metrics=['accuracy'])
+model1.compile(optimizer='adam',
+               loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+               metrics=['accuracy'])
 
 # Train the model
-history = model.fit(train_images, train_labels, epochs=12,
-                    validation_data=(test_images, test_labels))
+history1 = model1.fit(train_images, train_labels, epochs=12,
+                      validation_data=(test_images, test_labels))
 
 # Evaluate the model
-test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
-print(f"\nTest accuracy: {test_acc}")
+test_loss1, test_acc1 = model1.evaluate(test_images, test_labels, verbose=2)
+print(f"\nTest accuracy1: {test_acc1}")
 
-# Plot training history
-plt.plot(history.history['accuracy'], label='accuracy')
-plt.plot(history.history['val_accuracy'], label='val_accuracy')
-plt.xlabel('Epoch')
-plt.ylabel('Accuracy')
-plt.ylim([0, 1])
-plt.legend(loc='lower right')
-plt.show()
+# Smaller network
+model2 = models.Sequential()
+model2.add(layers.Conv2D(16, (3, 3), activation='relu', input_shape=(28, 28, 1)))
+model2.add(layers.MaxPooling2D((2, 2)))
+model2.add(layers.Flatten())
+model2.add(layers.Dense(32, activation='relu'))
+model2.add(layers.Dense(10))
+
+# Compile the model
+model2.compile(optimizer='adam',
+               loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+               metrics=['accuracy'])
+
+# Train the model
+history2 = model2.fit(train_images, train_labels, epochs=12,
+                      validation_data=(test_images, test_labels))
+
+# Evaluate the model
+test_loss2, test_acc2 = model1.evaluate(test_images, test_labels, verbose=2)
+print(f"\nTest accuracy1: {test_acc2}")
 
 # Predictions
-predictions = model.predict(test_images)
-predicted_labels = tf.argmax(predictions, axis=1)
+predictions1 = model1.predict(test_images)
+predicted_labels1 = tf.argmax(predictions1, axis=1)
 
 # Confusion Matrix using TensorFlow
-cm = tf.math.confusion_matrix(test_labels, predicted_labels, num_classes=10)
+cm1 = tf.math.confusion_matrix(test_labels, predicted_labels1, num_classes=10)
 
-print("\nConfusion matrix:")
-print(cm)
+print("\nConfusion matrix 1:")
+print(cm1)
+
+# Predictions
+predictions2 = model2.predict(test_images)
+predicted_labels2 = tf.argmax(predictions2, axis=1)
+
+# Confusion Matrix using TensorFlow
+cm2 = tf.math.confusion_matrix(test_labels, predicted_labels2, num_classes=10)
+
+print("\nConfusion matrix 2:")
+print(cm2)
+
+plot_model_performance(history1, 'Bigger network')
+plot_model_performance(history2, 'Smaller network')
+
+plt.title('Model Comparison')
+plt.xlabel('Epoch')
+plt.ylabel('Accuracy/Loss')
+plt.legend()
+plt.show()

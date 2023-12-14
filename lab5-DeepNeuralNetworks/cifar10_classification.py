@@ -73,15 +73,6 @@ history = model.fit(train_images, train_labels, epochs=12,
 test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
 print(f"\nTest accuracy: {test_acc}")
 
-# Plot training history
-plt.plot(history.history['accuracy'], label='accuracy')
-plt.plot(history.history['val_accuracy'], label='val_accuracy')
-plt.xlabel('Epoch')
-plt.ylabel('Accuracy')
-plt.ylim([0, 1])
-plt.legend(loc='lower right')
-plt.show()
-
 predictions = model.predict(test_images)
 predicted_labels = tf.argmax(predictions, axis=1)
 
@@ -90,3 +81,12 @@ cm = tf.math.confusion_matrix(test_labels, predicted_labels, num_classes=10)
 
 print("\nConfusion matrix:")
 print(cm)
+
+# Plot training history
+plt.plot(history.history['accuracy'], label='accuracy')
+plt.plot(history.history['val_accuracy'], label='val_accuracy')
+plt.xlabel('Epoch')
+plt.ylabel('Accuracy')
+plt.ylim([0, 1])
+plt.legend(loc='lower right')
+plt.show()
