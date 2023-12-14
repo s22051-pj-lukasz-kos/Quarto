@@ -1,7 +1,26 @@
 """
-Module for Deep Neural Network training
+Authors: Łukasz Kos, Emilian Murawski
 
+Wheat Seeds classification from lab4 using TensorFlow
 
+Dataset classifies seeds on class 1, 2 and 3. It takes into account perimeter of seed, compactness,
+length of kernel, width of kernel, asymmetry coefficient and length of kernel groove.
+
+Wheat Seeds Dataset:
+- Wheat Seeds datasets consist of table with 210 records with 6 features and 1 label column
+- Classes: 1, 2 or 3
+
+Model Architecture:
+- Convolutional Neural
+
+Usage:
+- Split the data into features and target labels.
+- Normalize the data and create one-hot encoding format.
+- Building Sequential model with tree Dense layers
+- Compiling the model with the Adam optimizer and categorical crossentropy loss function.
+- Training the model on the training data.
+- Evaluating the model on the test data.
+- Generate and print the confusion matrix
 """
 import pandas as pd
 from sklearn.model_selection import train_test_split

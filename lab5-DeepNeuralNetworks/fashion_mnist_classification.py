@@ -1,21 +1,20 @@
-import tensorflow as tf
-from tensorflow.keras import datasets, layers, models
-import matplotlib.pyplot as plt
-
 """
 Authors: Łukasz Kos, Emilian Murawski
 
 Fashion-MNIST Image Classification using TensorFlow
 
-This program uses TensorFlow and Keras to build a Convolutional Neural Network (CNN) for image classification on the Fashion-MNIST dataset.
+This program uses TensorFlow and Keras to build a Convolutional Neural Network (CNN)
+for image classification on the Fashion-MNIST dataset.
 
 Fashion-MNIST Dataset:
 - The Fashion-MNIST dataset consists of 60,000 28x28 grayscale images in 10 different classes.
 - Classes: T-shirt/top, Trouser, Pullover, Dress, Coat, Sandal, Shirt, Sneaker, Bag, Ankle boot.
 
 Model Architecture:
-- The CNN model consists of three convolutional layers with max-pooling, followed by a flattening layer and two dense layers.
-- Rectified Linear Unit (ReLU) is used as the activation function for convolutional layers, and no activation for the output layer.
+- The CNN model consists of three convolutional layers with max-pooling,
+  followed by a flattening layer and two dense layers.
+- Rectified Linear Unit (ReLU) is used as the activation function for convolutional layers,
+  and no activation for the output layer.
 - Adam optimizer is used with Sparse Categorical Crossentropy as the loss function.
 
 Usage:
@@ -37,8 +36,11 @@ Returns:
 - None
 
 Example:
-    python fashion-mnist_classification.py
+    python fashion_mnist_classification.py
 """
+import tensorflow as tf
+from tensorflow.keras import datasets, layers, models  # pylint: disable=import-error, no-name-in-module
+import matplotlib.pyplot as plt
 
 
 # Load fashion-MNIST dataset
@@ -73,7 +75,7 @@ print(f"\nTest accuracy: {test_acc}")
 
 # Plot training history
 plt.plot(history.history['accuracy'], label='accuracy')
-plt.plot(history.history['val_accuracy'], label = 'val_accuracy')
+plt.plot(history.history['val_accuracy'], label='val_accuracy')
 plt.xlabel('Epoch')
 plt.ylabel('Accuracy')
 plt.ylim([0, 1])

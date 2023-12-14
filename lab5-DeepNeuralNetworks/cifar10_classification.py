@@ -1,21 +1,20 @@
-import tensorflow as tf
-from tensorflow.keras import datasets, layers, models
-import matplotlib.pyplot as plt
-
 """
 Authors: Łukasz Kos, Emilian Murawski
 
 CIFAR-10 Image Classification using TensorFlow
 
-This program uses TensorFlow and Keras to build a Convolutional Neural Network (CNN) for image classification on the CIFAR-10 dataset.
+This program uses TensorFlow and Keras to build a Convolutional Neural Network (CNN)
+for image classification on the CIFAR-10 dataset.
 
 CIFAR-10 Dataset:
 - The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 different classes.
 - Classes: Airplane, Automobile, Bird, Cat, Deer, Dog, Frog, Horse, Ship, Truck.
 
 Model Architecture:
-- The CNN model consists of three convolutional layers with max-pooling, followed by a flattening layer and two dense layers.
-- Rectified Linear Unit (ReLU) is used as the activation function for convolutional layers, and softmax for the output layer.
+- The CNN model consists of three convolutional layers with max-pooling,
+  followed by a flattening layer and two dense layers.
+- Rectified Linear Unit (ReLU) is used as the activation function for convolutional layers,
+  and softmax for the output layer.
 - Adam optimizer is used with Sparse Categorical Crossentropy as the loss function.
 
 Usage:
@@ -37,8 +36,12 @@ Returns:
 - None
 
 Example:
-    python cifar-10_classification.py
+    python cifar10_classification.py
 """
+import tensorflow as tf
+from tensorflow.keras import datasets, layers, models  # pylint: disable=import-error, no-name-in-module
+import matplotlib.pyplot as plt
+
 
 # Load CIFAR-10 dataset
 (train_images, train_labels), (test_images, test_labels) = datasets.cifar10.load_data()
@@ -72,7 +75,7 @@ print(f"\nTest accuracy: {test_acc}")
 
 # Plot training history
 plt.plot(history.history['accuracy'], label='accuracy')
-plt.plot(history.history['val_accuracy'], label = 'val_accuracy')
+plt.plot(history.history['val_accuracy'], label='val_accuracy')
 plt.xlabel('Epoch')
 plt.ylabel('Accuracy')
 plt.ylim([0, 1])
