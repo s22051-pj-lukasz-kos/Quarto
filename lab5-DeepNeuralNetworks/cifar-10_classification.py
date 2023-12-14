@@ -2,6 +2,44 @@ import tensorflow as tf
 from tensorflow.keras import datasets, layers, models
 import matplotlib.pyplot as plt
 
+"""
+Authors: Łukasz Kos, Emilian Murawski
+
+CIFAR-10 Image Classification using TensorFlow
+
+This program uses TensorFlow and Keras to build a Convolutional Neural Network (CNN) for image classification on the CIFAR-10 dataset.
+
+CIFAR-10 Dataset:
+- The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 different classes.
+- Classes: Airplane, Automobile, Bird, Cat, Deer, Dog, Frog, Horse, Ship, Truck.
+
+Model Architecture:
+- The CNN model consists of three convolutional layers with max-pooling, followed by a flattening layer and two dense layers.
+- Rectified Linear Unit (ReLU) is used as the activation function for convolutional layers, and softmax for the output layer.
+- Adam optimizer is used with Sparse Categorical Crossentropy as the loss function.
+
+Usage:
+1. Load the CIFAR-10 dataset and normalize pixel values to be between 0 and 1.
+2. Define the CNN model architecture using the Sequential API of Keras.
+3. Compile the model specifying the optimizer, loss function, and evaluation metrics.
+4. Train the model using the training data and validate it on the test data.
+5. Evaluate the trained model on the test set and print the test accuracy.
+6. Plot the training history to visualize accuracy over epochs.
+7. Generate and print the confusion matrix.
+
+Parameters:
+- train_images (numpy.ndarray): Training images.
+- train_labels (numpy.ndarray): Training labels.
+- test_images (numpy.ndarray): Test images.
+- test_labels (numpy.ndarray): Test labels.
+
+Returns:
+- None
+
+Example:
+    python cifar10_classification.py
+"""
+
 # Load CIFAR-10 dataset
 (train_images, train_labels), (test_images, test_labels) = datasets.cifar10.load_data()
 
