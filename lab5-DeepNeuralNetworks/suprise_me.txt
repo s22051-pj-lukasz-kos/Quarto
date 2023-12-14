@@ -1,0 +1,15 @@
+In analogy with using neural networks to recognize cancer from roentgens images, we came up with quite similar,
+but a little bit controversial idea. Inspired by South Park S26E03 episode called “Japanese Toilet”
+where smart toilets become a symbol of status and an attempt to reaffirm one's social and financial status,
+we were wondering about what improvement in that field could be a real game changer,
+that could make a real difference in improving human health. Colon cancer is responsible for great deal of humans deaths,
+especially for men. We propose equipping smart toilets with UV-light cameras to capture images of stool.
+Having in mind that average human bowel movement generates one stool a day, it  creates enormous dataset.
+This kind of dataset its perfect to process with modern neural networks. Despite of controversies, especially concerning
+privacy matters that could lead to improving recognition of occult blood in stool which is a symptom of colon cancer but
+also parasite infections and all sort of other symptoms.
+But that leads us to a more philosophical question “Is this shit worth it?” :)
+
+After brief research, it turned out that we are not the first crazy ones:
+http://ieeexplore.ieee.org/document/9632585
+https://arxiv.org/pdf/1903.10578
