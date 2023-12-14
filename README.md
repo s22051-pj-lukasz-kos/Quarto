@@ -38,3 +38,11 @@ Classification of two problems using Decision Tree and Support Vector Machine:
 
 Deadline: 15.12.2023
 
+Couple of Neural Network models using TensorFlow.  
+We recommend to use GPU computation for running those scripts. But for that you have to install specific stack. Those scripts were run with: 
+- [TensorFlow 2.13](https://www.tensorflow.org/install/pip)
+  - `pip install tensorflow==2.13.0`
+- [CUDA 11.8](https://developer.nvidia.com/cuda-11-8-0-download-archive)
+- [cuDNN 8.6](https://developer.nvidia.com/rdp/cudnn-archive)  
+
+Otherwise, classification of one problem with CPU only computations could take several dozen minutes.
