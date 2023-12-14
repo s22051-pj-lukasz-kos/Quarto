@@ -6,6 +6,9 @@ Module for Deep Neural Network training
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import confusion_matrix, classification_report
+import numpy as np
+import tensorflow as tf
 from tensorflow.keras.models import Sequential  # pylint: disable=import-error, no-name-in-module
 from tensorflow.keras.layers import Dense  # pylint: disable=import-error, no-name-in-module
 from tensorflow.keras.utils import to_categorical  # pylint: disable=import-error, no-name-in-module
@@ -48,3 +51,17 @@ model.fit(X_train, y_train, epochs=100, batch_size=32, validation_split=0.2)
 # Evaluate the model
 loss, accuracy = model.evaluate(X_test, y_test)
 print(f'Test accuracy: {accuracy}')
+
+# Make predictions on the test set
+y_pred = model.predict(X_test)
+y_pred_classes = np.argmax(y_pred, axis=1)
+y_true_classes = np.argmax(y_test, axis=1)
+
+# Confusion Matrix
+cm = confusion_matrix(y_true_classes, y_pred_classes)
+print("Confusion Matrix:")
+print(cm)
+
+# Classification Report
+print("Classification Report:")
+print(classification_report(y_true_classes, y_pred_classes))
