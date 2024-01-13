@@ -23,7 +23,7 @@ function WebPlayback(props) {
 
     window.onSpotifyWebPlaybackSDKReady = () => {
       const player = new window.Spotify.Player({
-        name: "Handgesture Spotify",
+        name: "HandGesture Spotify",
         getOAuthToken: (cb) => {
           cb(props.token);
         },
