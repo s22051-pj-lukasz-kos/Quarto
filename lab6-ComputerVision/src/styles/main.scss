@@ -12,11 +12,10 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. */
 
-@use "material-components-web/material-components-web";
+@use "~material-components-web/material-components-web";
 body {
   font-family: roboto;
   margin: 2em;
-  color: #3d3d3d;
   --mdc-theme-primary: #007f8b;
   --mdc-theme-on-primary: #f1f3f4;
 }

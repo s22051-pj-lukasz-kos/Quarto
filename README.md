@@ -53,8 +53,6 @@ Otherwise, classification of one problem with CPU only computations could take s
 
 Deadline: 20.01.2024
 
-**Na razie zrobiłem implementację MediaPipe Gesture Recognizer pod web**
-
 - npm install (you have to install Node.js)
 - npm run build
-- npm run start
+- npm run dev
