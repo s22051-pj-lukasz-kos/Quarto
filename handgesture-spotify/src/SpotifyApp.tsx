@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import WebPlayback from "./WebPlayback";
 import Login from "./Login";
-import "./App.css";
+import "./SpotifyApp.css";
 
-function App() {
+function SpotifyApp() {
   const [token, setToken] = useState("");
 
   useEffect(() => {
@@ -19,4 +19,4 @@ function App() {
   return <>{token === "" ? <Login /> : <WebPlayback token={token} />}</>;
 }
 
-export default App;
+export default SpotifyApp;
