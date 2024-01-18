@@ -2,17 +2,28 @@ const express = require("express");
 const dotenv = require("dotenv");
 const request = require("request");
 
+// Port on which the Express server will run
 const port = 5000;
 
+// Global variable to store the Spotify access token
 global.access_token = "";
 
+// Load environment variables from a .env file
 dotenv.config();
 
+// Retrieve Spotify client ID and client secret from environment variables
 var spotify_client_id = process.env.SPOTIFY_CLIENT_ID;
 var spotify_client_secret = process.env.SPOTIFY_CLIENT_SECRET;
 
 var spotify_redirect_uri = "http://localhost:3000/auth/callback";
 
+
+/**
+ * Generates a random string of the specified length.
+ *
+ * @param {number} length - The length of the random string.
+ * @returns {string} - The generated random string.
+ */
 var generateRandomString = function (length) {
   var text = "";
   var possible =
@@ -26,6 +37,9 @@ var generateRandomString = function (length) {
 
 var app = express();
 
+/**
+ * Handles the authentication process by redirecting the user to the Spotify authorization page.
+ */
 app.get("/auth/login", (req, res) => {
   var scope = "streaming user-read-email user-read-private";
   var state = generateRandomString(16);
@@ -44,6 +58,10 @@ app.get("/auth/login", (req, res) => {
   );
 });
 
+/**
+ * Handles the Spotify callback after user authorization, retrieves the access token,
+ * and stores it in the global variable.
+ */
 app.get("/auth/callback", (req, res) => {
   var code = req.query.code;
 
@@ -73,6 +91,9 @@ app.get("/auth/callback", (req, res) => {
   });
 });
 
+/**
+ * Endpoint to retrieve the stored Spotify access token.
+ */
 app.get("/auth/token", (req, res) => {
   res.json({
     access_token: global.access_token,

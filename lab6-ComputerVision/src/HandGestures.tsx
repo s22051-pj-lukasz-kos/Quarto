@@ -7,6 +7,14 @@ import {
   DrawingUtils,
 } from "@mediapipe/tasks-vision";
 
+/**
+ * HandGestures component handles webcam access, gesture recognition, and displays results.
+ *
+ * @component
+ * @param {Object} props - React props for the component.
+ * @param {function} props.setCategoryName - Function to set the recognized gesture category name.
+ * @returns {JSX.Element} - The rendered HandGestures component.
+ */
 function HandGestures({ setCategoryName }) {
   const [webcamRunning, setWebcamRunning] = useState<boolean>(false);
   // for showing section when loaded

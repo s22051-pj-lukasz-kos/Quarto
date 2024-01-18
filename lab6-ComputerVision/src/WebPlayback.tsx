@@ -1,5 +1,17 @@
 import React, { useState, useEffect } from "react";
 
+
+/**
+ * Default track object structure.
+ *
+ * @typedef {Object} Track
+ * @property {string} name - The name of the track.
+ * @property {Object} album - The album details of the track.
+ * @property {Object[]} album.images - An array of images associated with the album.
+ * @property {string} album.images.url - The URL of the album cover image.
+ * @property {Object[]} artists - An array of artists associated with the track.
+ * @property {string} artists.name - The name of the artist.
+ */
 const track = {
   name: "",
   album: {
@@ -8,8 +20,28 @@ const track = {
   artists: [{ name: "" }],
 };
 
+/**
+ * WebPlayback component handles Spotify Web Playback SDK integration and controls.
+ *
+ * @component
+ * @param {Object} props - React props for the component.
+ * @param {string} props.token - The Spotify access token for authentication.
+ * @param {string} props.categoryName - The name of the gesture category.
+ * @returns {JSX.Element} - The rendered WebPlayback component.
+ */
 function WebPlayback({ token, categoryName }) {
+  /**
+   * State to track whether the playback is paused.
+   *
+   * @type {boolean}
+   */
   const [is_paused, setPaused] = useState(false);
+
+  /**
+   * State to track whether the playback is active.
+   *
+   * @type {boolean}
+   */
   const [is_active, setActive] = useState(false);
   const [player, setPlayer] = useState(undefined);
   const [current_track, setTrack] = useState(track);
@@ -62,6 +94,9 @@ function WebPlayback({ token, categoryName }) {
     };
   }, [token]);
 
+  /**
+   * useEffect hook to handle gesture-based controls for playback.
+   */
   useEffect(() => {
     switch (categoryName) {
       case "Pointing_Up":
