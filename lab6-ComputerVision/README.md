@@ -1,60 +1,63 @@
-# Getting Started with Create React App
+# HandGesture-Spotify App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Authors: Łukasz Kos, Emilian Murawski
 
-## Available Scripts
+HandGesture-Spotify is a web application that enables users to control Spotify playback using hand gestures captured 
+via a webcam. The app utilizes the MediaPipe library for hand gesture recognition and integrates with the Spotify API 
+for music playback control. It uses an Express backend for authentication, ensuring a secure and seamless connection to 
+your Spotify account and Rect frontend for convenient usage.
 
-In the project directory, you can run:
+For more info of 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Play and pause music with a raised index finger gesture.
+- Stop music with a closed fist gesture.
+- Skip to the next track with a thumb-up gesture.
+- Go back to the previous track with a thumb-down gesture.
 
-### `npm test`
+## Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Before running the application, make sure you have the following installed:
 
-### `npm run build`
+- Node.js
+- npm (Node Package Manager)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/s22051-pj-lukasz-kos/Quarto.git
+    ```
+2. Change active directory to project root:
 
-## Learn More
+    ```bash
+   cd lab6-ComputerVision
+   ```
+3. Install required dependencies using npm:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm install
+   ```
+4. Build project:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm run build
+   ```
+5. Run both backend and frontend apps:
+   ```bash
+   npm run dev
+   ```
+6. Go to web browser [http://localhost:3000/](http://localhost:3000/)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+7. Log in to your Spotify account
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+8. Open your Spotify instance on PC or smartphone and connect to your instance
+   ![spotify-conect](media/spotify-connect.png)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+9. Click enable predicitons and Enjoy :)
