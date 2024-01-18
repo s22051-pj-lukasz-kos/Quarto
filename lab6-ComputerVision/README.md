@@ -5,7 +5,7 @@ Authors: Łukasz Kos, Emilian Murawski
 HandGesture-Spotify is a web application that enables users to control Spotify playback using hand gestures captured 
 via a webcam. The app utilizes the MediaPipe library for hand gesture recognition and integrates with the Spotify API 
 for music playback control. It uses an Express backend for authentication, ensuring a secure and seamless connection to 
-your Spotify account and Rect frontend for convenient usage.
+your Spotify account and React frontend for convenient usage.
 
 For more info of 
 
@@ -60,4 +60,4 @@ Before running the application, make sure you have the following installed:
    ![spotify-conect](media/spotify-connect.png)
 
 
-9. Click enable predicitons and Enjoy :)
+9. Click enable predicitons, allow app to use camera and enjoy :)
